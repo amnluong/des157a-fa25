@@ -1,0 +1,280 @@
+body {
+    background-color: rgb(255, 240, 240);
+    width: 1100px;
+    height: 700px; 
+    margin: 0; 
+}
+
+#banner {
+    width: 1100px;
+    height: 250px;
+    background-color: #FBDBDB;
+    margin-top: 0;
+}
+
+.heart {
+    margin: 10px;
+    color: #b54f4f;
+    transition: transform 0.3s ease;
+}
+
+.heart:hover { 
+    transform: matrix(1, 0, 0, 1, 990, 0);
+    transition: all 5s;
+}
+
+header h1 {
+    transition: background-color 0.5s;
+}
+
+header h1:hover {
+    background-color: #dfb3b3;
+}
+
+.bearhead {
+    width:100px;
+    height: 90px;
+    background-color: #CEB39A;
+    border-radius: 50%;
+    position: relative;
+    left: 920px;
+    top: -50px;
+    z-index: 2;
+
+}
+
+.bearear1 {
+    width:38px;
+    height:38px;
+    background-color: #CEB39A;
+    border-radius: 50%;
+    position:relative;
+    left: 915px;
+    top: -145px;
+}
+
+.bearearpink1 {
+    width: 28px;
+    height:28px;
+    background-color: #CEB39A;
+    border-radius: 50%;
+    position:relative;
+    left: 924px;
+    top: -212px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.bearearpink1:hover {
+    background-color: #d69797;
+}
+
+
+.bearearpink2{
+    width: 28px;
+    height:28px;
+    background-color: #CEB39A;
+    border-radius: 50%;
+    position:relative;
+    left: 986px;
+    top: -241px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.bearearpink2:hover {
+    background-color: #d69797;
+}
+.bearear2{
+    width:38px;
+    height:38px;
+    background-color: #CEB39A;
+    border-radius: 50%;
+    position:relative;
+    left: 985px;
+    top: -185px;
+}
+
+.beareye1 {
+    width: 6px;
+    height:10px;
+    background-color: #646464;
+    border-radius: 50%;
+    position:relative;
+    left: 952px;
+    top: -220px;
+    z-index: 100;
+}
+
+.beareye2{
+    width: 6px;
+    height:10px;
+    background-color: #646464;
+    border-radius: 50%;
+    position:relative;
+    left: 983px;
+    top: -230px;
+    z-index: 100;
+
+}
+
+.bearnose {
+    width: 10px;
+    height:5px;
+    background-color: #B08787;
+    border-radius: 50%;
+    position:relative;
+    left: 965px;
+    top: -225px;
+    z-index: 100;
+
+}
+
+.bearbody {
+    width:95px;
+    height: 55px;
+    background-color: #CEB39A;
+    border-radius: 50%;
+    position:relative;
+    left: 923px;
+    top: -220px;
+    z-index: 1;
+}
+
+.beararm1 {
+    width:38px;
+    height:30px;
+    background-color: #DAC3AD;
+    border-radius: 50%;
+    position:relative;
+    left: 933px;
+    top: -275px;
+    z-index: 2;
+}
+
+.beararm2{
+    width:38px;
+    height:30px;
+    background-color: #DAC3AD;
+    border-radius: 50%;
+    position:relative;
+    left: 968px;
+    top: -305px;
+    z-index: 2;
+}
+
+header h1 {
+    text-align: left;
+    font-family: handjet;
+    font-size: 70px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+header h2 {
+    text-align: left;
+    font-family: handjet;
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 0px;
+    padding-left: 10px;
+    margin-bottom: 30px
+}
+
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.section {
+    display: block;
+    width: 250px;
+    height: 350px;
+    background-color: #F4C5C5;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+.title {
+    background-color: #EAA8A8;
+    border-top-right-radius: 20px;
+    height:50px;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    padding: 10px;
+    font-family: handjet;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.buttons {
+    padding: 0;
+    margin: auto;
+    width: 220px;
+    text-align: left;
+    font-family: lora;
+    font-size: 14px;
+
+}
+
+.buttons li {
+    display:block;
+    background-color: #FCE2E2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.buttons li a {
+    display: block;
+    text-decoration: none;
+}
+
+.list { 
+    margin: 0;
+    padding: 0;
+
+}
+
+h2, li {
+    display: block;
+}
+
+
+main h2 {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px; 
+}
+
+main p {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px; 
+    flex-direction: column;
+}
+
+footer {
+    display: block;
+    background-color: #E5BABA;
+    width: 1100px;
+    height: 60px;
+    text-align: center;
+    font-family: lora;
+    font-size: 14px;
+}
+
+
+
+

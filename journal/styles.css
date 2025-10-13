@@ -1,3 +1,131 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(255, 240, 240);
+    width: 1100px;
+    height: 700px; 
+    margin: 0; 
+}
+
+#banner {
+    width: 1100px;
+    height: 100px;
+    background-color: #FBDBDB;
+    margin-top: 0;
+    text-align: center;
+}
+
+header h1 {
+    transition: background-color 0.5s;
+}
+
+header h1:hover {
+    background-color: #dfb3b3;
+}
+
+header h1 {
+    text-align: left;
+    font-family: handjet;
+    font-size: 70px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+header h2 {
+    text-align: left;
+    font-family: handjet;
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 0px;
+    padding-left: 10px;
+    margin-bottom: 30px
+}
+
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.section {
+    display: block;
+    width: 250px;
+    height: 600px;
+    background-color: #F4C5C5;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.title {
+    background-color: #EAA8A8;
+    border-top-right-radius: 20px;
+    height:50px;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    padding: 10px;
+    font-family: handjet;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.buttons {
+    padding: 0;
+    margin: auto;
+    width: 220px;
+    text-align: left;
+    font-family: lora;
+    font-size: 14px;
+}
+
+.buttons li {
+    display:block;
+    background-color: #FCE2E2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.buttons li a {
+    display: block;
+    text-decoration: none;
+}
+
+.list { 
+    margin: 0;
+    padding: 0;
+
+}
+
+h2, li {
+    display: block;
+}
+
+
+main h2 {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px; 
+}
+
+main p {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px; 
+    flex-direction: column;
+}
+
+footer {
+    display: block;
+    background-color: #E5BABA;
+    width: 1100px;
+    height: 60px;
+    text-align: center;
+    font-family: lora;
+    font-size: 14px;
 }

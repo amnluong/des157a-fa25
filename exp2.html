@@ -4,19 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+
+        body {
+            color: black;
+        }
+
+        .red { color: red; }
+        #pink {color: hotpink; }
+        .purple { color: purple; }
+        .blue { color: blue; }
+        .orange {color: orange;}
+        .green {color: green;}
+
+    </style>
 </head>
 <body>
-    <h1> Experiment 1 </h1>
-    <h2> Right click and select "inspect" and then click "console"to see the code function. </h2>
+    <h1 class = "red"> Experiment 2 </h1>
+
+    <div id="pink">
+        <h2> Hello </h2>
+    </div>
+
+    <p class = "green"> What is your name? </p>
+    <p class = "orange"> How are you? </p>
+
+    <div id="pink">
+        <h2> Questions </h2>
+    </div>
+    
+    <p class = "blue"> What is your favorite color? </p>
+    <p class = "purple"> What are your favorite food?</p>
 
     <script>
       /*   When you type in a number less than 101, a list of number from 0-100 pops up. When a number is divisible by 3, it'll say fizz instead of its number and when it is divisible by 5, it'll say buzz.  */
 
-        var number = prompt("enter a number","");
-        /* selection */
-            if (number < 101 ){ /* sequence */
-                console.log("numbers!");
-                /* loop */
+        var selectedColor = prompt("enter a color","").toLowerCase(); 
+
+        var color = ['purple', 'blue', 'pink', 'red', 'orange', 'green'];
+
+
+/*      if (selectedColor === "red") {
+        var red = document.querySelectorAll('h1');
+            for (var i=0; i<red.length; i++) {
+                red[i].className = "red";
+            }
+        }
+
+        if (selectedColor === "pink") {
+        var pink = document.querySelectorAll('h2');
+            for (var i=0; i<pink.length; i++) {
+                pink[i].className = "pink";
+            }
+        }
+        
+        if (selectedColor === "green") {
+        var green = document.querySelector('p');
+            for (var i=0; i<green.length; i++) {
+                green[i].className = "green";
+            }
+        }
+
+        if (selectedColor === "orange") {
+        var orange = document.querySelector('p');
+            for (var i=0; i<orange.length; i++) {
+                orange[i].className = "orange";
+            }
+    }
+
+        if (selectedColor === "blue") {
+        var blue = document.querySelector('p');
+            for (var i=0; i<blue.length; i++) {
+                blue[i].className = "blue";
+            }
+        }
+
+        if (selectedColor === "purple") {
+        var purple = document.querySelector('p');
+            for (var i=0; i<purple.length; i++) {
+                purple[i].className = "purple";
+            }
+        }
+ */
+        
+       /*  if (color.color (color)){
+            var section = document.querySelectorAll ("#" + color + "*");
+            for (var i=0; i<section.length;i++){
+                section[i].style.color = color;
+            }
+        } */
+       
+    
+
+
+/*         var number = prompt("enter a color","");
+            if ( color < 6 ){
+                console.log("colors!");
                 for(var i=0; i<100; i++){
                     if (i % 3 === 0) {
                         console.log("Fizz");
@@ -29,7 +113,7 @@
                 }
             }
 
-            }
+            } */
      
     </script>
 </body>

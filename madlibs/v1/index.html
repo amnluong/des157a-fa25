@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bake Madlibs </title>
 
-    <link rel="styleshet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Luxurious+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
     <script src="script.js" defer></script>
+
+
 
 </head>
 <body>
@@ -16,22 +23,39 @@
 
     <main>
 
-       <h2> Provide words to make a cake! </h2>
-
-
+        <div class="form">
             <form>
+                <h2> Provide words to make a cake! </h2>
+                <p> name <input type="text" > </p>
+                <p> adjective <input type="text" > </p>
+                <p> adjective <input type="text" > </p>
+                <p> verb <input type="text" > </p>
+                <p> 3 digit number  <input type="text" > </p>
                 <p> noun <input type="text" > </p>
                 <p> noun <input type="text" > </p>
-                <p> noun <input type="text" > </p>
-                <p> noun <input type="text" > </p>
-                <p> noun <input type="text" > </p>
-                <p> noun <input type="text" > </p>
-                <p> noun <input type="text" > </p>
-                <p> noun <input type="text" > </p>
-                <p> noun <input type="text" > </p>
-                <p> noun <input type="text" > </p>
-            </form>
 
+                <button>  
+                <p> <a href="#" class="open"> results </a> </p> </button>         
+            </form>
+        </div>
     </main>
+
+    <section id="overlay" class="hidden">
+        <article>
+            <h1> Cake Results </h1>
+
+               <img src="images/madlibscakeresult.png" alt="cake">
+               
+            <p> Every year, we bake a cake for _______(name) to celebrate her birthday. Last year she got a _______(adjective) cake, so this year she will get a _______(adjective) cake. To bake the cake we need to mix all of the ingredients in a bowl. Then we need to _______(verb) it into a baking pan and bake it at ___(3 digit number) degrees. We want to make the cake special so we will add _______(noun) between the layers of the cake and decorate it with _______(noun). The cake is assembled and ready to be served! 
+              <button class="close">close</button> <br>
+            </p>
+          
+         
+        
+
+
+
+        </article>
+    </section>
 </body>
 </html>

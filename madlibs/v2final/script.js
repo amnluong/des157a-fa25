@@ -5,8 +5,7 @@
 
     const form = document.querySelector('.form');
     const madlib = document.querySelector('#madlib');
-    const overlay = document.querySelector('#overlay');
-
+    
     form.addEventListener('submit', function(event){
         event.preventDefault();
 
@@ -79,8 +78,6 @@
    
 
         madlib.innerHTML = myText;
-        overlay.className = 'showing';
-
     });
 
 })();

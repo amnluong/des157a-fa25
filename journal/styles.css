@@ -145,6 +145,11 @@ main p {
 
 
 
+.resulttext {
+    width: 50%;
+    padding:20px;
+
+}
 footer {
     display: block;
     background-color: #E5BABA;

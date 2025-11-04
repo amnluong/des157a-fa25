@@ -1,34 +1,29 @@
-(function () {
+(function(){
     'use strict';
 
-    const container = document.querySelector('#container');
-    const plushies = document.querySelectorAll ('#container div');
-    const img = document.querySelector('img');
+    const theSection = document.querySelectorAll('article');
+    const observer = new IntersectionObserver(callback, {threshold: 0.5}); 
+  
 
-    plushies.forEach(function (eachSpot){
-        eachSpot.addEventListener('mouseover', zoomPhoto);
-    });
 
-    function zoomPhoto (event){
-        const selection = event.target.id;
-        console.log(selection);
-        switch (selection){
-            case 'bottom1' : img.className = 'bottom1'; break; 
-            case 'bottom2' : img.className = 'bottom2'; break; 
-            case 'bottom3' : img.className = 'bottom3'; break; 
-            case 'bottom4' : img.className = 'bottom4'; break; 
-            case 'bottom5' : img.className = 'bottom5'; break; 
-            case 'bottom6' : img.className = 'bottom6'; break; 
-
-        }
+    for(const eachArticle of theSection ){
+        observer.observe(eachArticle);
     }
 
-    plushies.forEach(function (eachSpot){
-        eachSpot.addEventListener('mouseover', zoomPhoto);
-        eachSpot.addEventListener('mouseout', function(){
-            img.className = 'start';
-        })
-    });
+    function callback(entries){
 
+        for ( const eachEntry of entries){
 
+            if(eachEntry.isIntersecting){
+                console.log(eachEntry.target);
+                eachEntry.target.className='show';
+            } else {
+                console.log(eachEntry.target);
+                eachEntry.target.removeAttribute('class');
+            }
+
+        }
+
+       
+    }
 })();

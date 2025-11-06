@@ -74,14 +74,18 @@ body {
 
 h1 {
     color: beige;
+    font-family: cherry bomb one;
+    font-size: 50px;
 }
 
 
 h2 {
+    font-family: cherry bomb one;
     font-size: 36px;
     color:#382998;
 }
 
 p {
     color:#5b4fab;
+    font-family: sniglet;
 }

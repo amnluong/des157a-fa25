@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 500vh;
+    overflow:hidden;
+    overflow-y: auto;
+    background:#382998;
+    font-family: Helvetica;
+    color: rgb(211,211,211);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;;
+    align-items: center;
+
+}
+
+.container, .container2, .container3, .container4, .container5, .container6 {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+}
+
+.container:hover >.card, .container2:hover > .card, .container3:hover > .card, .container4:hover > .card, .container5:hover > .card, .container6:hover > .card {
+    cursor:pointer;
+    transform: rotateY(180deg);
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    gap: 2rem;
+}
+
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px;
+    position: absolute;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.front {
+    background-image: url(images/melfront.jpg); 
+
+}
+
+.back {
+    background-color: beige;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: beige;
+}
+
+
+h2 {
+    font-size: 36px;
+    color:#382998;
+}
+
+p {
+    color:#5b4fab;
+}

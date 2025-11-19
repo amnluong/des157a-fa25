@@ -79,5 +79,4 @@
         document.querySelector(`#container${counter}`).className = 'container onscreen';
         }
 
-    
 })();

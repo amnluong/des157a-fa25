@@ -110,9 +110,23 @@ p {
 
 }
 
-#container1:hover >.card, #container2:hover > .card, #container3:hover > .card, #container4:hover > .card, #container5:hover > .card, #container6:hover > .card {
+#container1:hover .card, #container2:hover  .card, #container3:hover  .card, #container4:hover  .card, #container5:hover  .card, #container6:hover  .card {
     cursor:pointer;
     transform: rotateY(180deg);
+}
+
+@keyframes wiggle {
+    0% {transform: rotateY(0deg); }
+    50% {transform: rotateY(10deg); }
+    100% {transform: rotateY(0deg); }
+}
+
+.cardwiggle {
+    animation: wiggle 3s ease-in-out infinite;
+}
+
+.container:hover .cardwiggle {
+    animation: none;
 }
 
 .container {
@@ -125,8 +139,9 @@ p {
     align-items: center;
     justify-content: center;
     
-
 }
+
+
 .card {
     height: 380px;
     width: 300px;
@@ -136,6 +151,8 @@ p {
     transform-style: preserve-3d;
     gap: 2rem;
 }
+
+
 
 
 .front,
@@ -169,6 +186,7 @@ p {
     align-items: center;
     text-align: center;
     padding: 20px;
+
 }
 
 

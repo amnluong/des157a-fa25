@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(237, 224, 224);
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start; 
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+    width: 1100px;
+    height: 650px;
+    border-radius: 10px;
+    padding: 20px;
+   
+}
+
+.topbuttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+
+}
+
+.gamecontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    padding: 20px;
+}
+
+.roll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.player1 {
+    margin: auto;
+    display: block;
+    background-color: #7E92BB; /* rgb(144, 174, 230) */;
+    width: 300px;
+    height: 580px;
+    border: 2px solid #7E92BB;
+    border-radius: 20px;
+}
+
+
+.startgamebutton {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #92CEBA;
+    border-color: rgb(96, 138, 97);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px;
+    font-family: gugi;
+    font-size: 20px;
+}
+
+.flowerimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: auto;
+    margin-top: 150px;
+}
+
+.flowerimages img:last-child {
+    margin-top: 100px;
+}
+
+.button1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #92CEBA;
+    border-color: rgb(96, 138, 97);
+    border-radius: 15px;
+    padding: 10px;  
+    margin-bottom: 50px;
+    width: 200px;
+    align-items: center;
+    font-family: gugi;
+}
+
+/* .button2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #F4738A;
+    border-color: rgb(180, 108, 108);
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+            position:relative;
+            bottom:5%;
+            top:65%;
+    font-family: gugi;
+}
+ */
+.player2 {
+    display: block;
+    background-color:/*  #F2A7AF */ rgb(220, 163, 182);
+    width: 300px;
+    height: 580px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin: 10px auto;    
+ }
+
+h2, p {
+    text-align: center;
+    font-family: gugi;
+}
+
+p {
+    font-size: 100px;
+    padding-top: 0px;
+    margin: 0;
+}
+
+ol {
+    font-family: gugi;
+
+}

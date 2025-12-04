@@ -28,7 +28,7 @@
 
 
 
-    //start game and quit buttons
+    //start game and quit 
 	startGame.addEventListener('click', function () {
         startGame.outerHTML = '<button id="quit"> Quit </button>';
 		document.getElementById('quit').addEventListener('click', function () {
@@ -125,6 +125,7 @@
         }
 	}
 
+	//shows the score 
 	function showCurrentScore() {
         document.querySelector('.player1 p').innerHTML = gameData.score[0];
         document.querySelector('.player2 p').innerHTML = gameData.score[1];

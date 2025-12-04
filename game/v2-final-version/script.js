@@ -1,12 +1,14 @@
 (function(){
 	
 	"use strict";
+	console.log("reading js");
 
 	const startGame = document.getElementById('startgame');
 	const game = document.getElementById('game');
 	const score = document.getElementById('score');
 	const actionArea = document.getElementById('actions');
 
+	//dice images 
 	const gameData = {
 		dice: ['images/pinkflower1.png', 
             'images/pinkflower2.png', 
@@ -26,7 +28,7 @@
 
 
 
-    //start game
+    //start game and quit buttons
 	startGame.addEventListener('click', function () {
         startGame.outerHTML = '<button id="quit"> Quit </button>';
 		document.getElementById('quit').addEventListener('click', function () {
@@ -36,6 +38,7 @@
 		setUpTurn();
 	});
 
+	//switches the images when dice is thrown
 	function setUpTurn() {
 		game.innerHTML = `<p>${gameData.players[gameData.index]}</p>
             <div id="diceContainer">
@@ -48,6 +51,7 @@
 		});
 	}
 
+	// adds or subtracts the scores when dice is thrown
 	function throwDice(){
 		actionArea.innerHTML = '';
 		gameData.roll1 = Math.floor(Math.random() * 6) + 1; //could result zero
@@ -102,6 +106,7 @@
 
 	}
 
+	// who wins the game 
 	function checkWinningCondition() {
 		if (gameData.score[gameData.index] > gameData.gameEnd) {
 			score.innerHTML = `<h2>${gameData.players[gameData.index]} 

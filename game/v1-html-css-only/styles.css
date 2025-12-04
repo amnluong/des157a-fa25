@@ -49,11 +49,11 @@ main {
 .player1 {
     margin: auto;
     display: block;
-    background-color: #7E92BB; /* rgb(144, 174, 230) */;
+    background-color: rgb(221, 205, 221) /* #7E92BB; */ /* rgb(144, 174, 230) */;
     width: 300px;
     height: 580px;
-    border: 2px solid #7E92BB;
-    border-radius: 20px;
+/*     border: 2px solid #7E92BB;
+ */    border-radius: 20px;
 }
 
 
@@ -110,15 +110,12 @@ main {
     border-radius: 15px;
     padding: 10px;
     width: 200px;
-            position:relative;
-            bottom:5%;
-            top:65%;
     font-family: gugi;
-}
- */
+} */
+
 .player2 {
     display: block;
-    background-color:/*  #F2A7AF */ rgb(220, 163, 182);
+    background-color: /* rgb(237, 224, 224); */ #F2A7AF;/*  rgb(220, 163, 182); */
     width: 300px;
     height: 580px;
     border-radius: 20px;

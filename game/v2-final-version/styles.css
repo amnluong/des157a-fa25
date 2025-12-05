@@ -17,6 +17,7 @@ main {
     height: 650px;
     border-radius: 10px;
     gap: 20px;
+    position: relative;
    
 }
 
@@ -180,6 +181,16 @@ p {
 ol {
     font-family: gugi;
 
+}
+
+footer p a {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+    margin: 0;
+    text-decoration: none;
 }
 
 

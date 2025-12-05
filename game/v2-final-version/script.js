@@ -8,6 +8,10 @@
 	const score = document.getElementById('score');
 	const actionArea = document.getElementById('actions');
 
+	//audio 
+	const diceSound = document.getElementById('dicesound');
+	const winSound = document.getElementById('winsound');
+
 	//dice images 
 	const gameData = {
 		dice: ['images/pinkflower1.png', 
@@ -28,7 +32,7 @@
 
 
 
-    //start game and quit 
+    //start game    
 	startGame.addEventListener('click', function () {
         startGame.outerHTML = '<button id="quit"> Quit </button>';
 		document.getElementById('quit').addEventListener('click', function () {
@@ -46,21 +50,29 @@
                 <img id="die2" src="images/pinkflower1.png">
             </div>`
 		actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
-		document.getElementById('roll').addEventListener('click', function(){
-			throwDice();
+
+		//sound for roll buttons
+		document.getElementById('roll').addEventListener('mouseup', function (){
+			diceSound.currentTime = 0;
+			diceSound.play();
 		});
+
+		document.getElementById('roll').addEventListener('click', throwDice);
 	}
+
 
 	// adds or subtracts the scores when dice is thrown
 	function throwDice(){
 		actionArea.innerHTML = '';
-		gameData.roll1 = Math.floor(Math.random() * 6) + 1; //could result zero
+
+		gameData.roll1 = Math.floor(Math.random() * 6) + 1;
 		gameData.roll2 = Math.floor(Math.random() * 6) + 1;
 
         document.getElementById('die1').src = gameData.dice[gameData.roll1-1];
         document.getElementById('die2').src = gameData.dice[gameData.roll2-1];
 
 		gameData.rollSum = gameData.roll1 + gameData.roll2;
+
 
 		// if a double 4 is rolled subtract 8 points 
 		if( gameData.roll1 === 4 && gameData.roll2 === 4) {
@@ -73,10 +85,11 @@
 
             actionArea.innerHTML = '<button id="roll2">Roll the Dice </button>';
 		} 
+
+
         // if a 4 is rolled subtract 4
         else if ( gameData.roll1 === 4 || gameData.roll2 === 4) {
             gameData.score[gameData.index] -= 4;
-
 			showCurrentScore();
 
 			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
@@ -89,6 +102,12 @@
 		else { 
 			gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
 			actionArea.innerHTML = '<button id="rollagain">Roll again</button> <button id="pass">Pass</button>';
+
+			//roll again sound
+			document.getElementById('rollagain').addEventListener('mouseup', function (){
+				diceSound.currentTime = 0;
+				diceSound.play();
+			});
 
 			document.getElementById('rollagain').addEventListener('click', function () {
 				//setUpTurn();
@@ -106,13 +125,18 @@
 
 	}
 
-	// who wins the game 
+	// check who wins the game 
 	function checkWinningCondition() {
 		if (gameData.score[gameData.index] > gameData.gameEnd) {
 			score.innerHTML = `<h2>${gameData.players[gameData.index]} 
 			wins with ${gameData.score[gameData.index]} points!</h2>`;
 
 			actionArea.innerHTML = '';
+
+			//win sound
+			winSound.currentTime = 0;
+			winSound.play();
+
 
 			const quitButton = document.getElementById('quit');
                 if (quitButton) {

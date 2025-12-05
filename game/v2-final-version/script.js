@@ -14,12 +14,12 @@
 
 	//dice images 
 	const gameData = {
-		dice: ['images/pinkflower11.png', 
-            'images/pinkflower22.png', 
-            'images/pinkflower33.png', 
-            'images/pinkflower44.png', 
-            'images/pinkflower55.png', 
-            'images/pinkflower66.png'],
+		dice: ['images/pinkflower111.PNG', 
+            'images/pinkflower222.PNG', 
+            'images/pinkflower333.PNG', 
+            'images/pinkflower444.PNG', 
+            'images/pinkflower555.PNG', 
+            'images/pinkflower666.PNG'],
 
 		players: ['player 1', 'player 2'],
 		score: [0, 0],
@@ -46,8 +46,8 @@
 	function setUpTurn() {
 		game.innerHTML = `<p>${gameData.players[gameData.index]}</p>
             <div id="diceContainer">
-                <img id="die1" src="images/pinkflower11.png">
-                <img id="die2" src="images/pinkflower11.png">
+                <img id="die1" src="images/pinkflower111.PNG">
+                <img id="die2" src="images/pinkflower111.PNG">
             </div>`
 		actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
 

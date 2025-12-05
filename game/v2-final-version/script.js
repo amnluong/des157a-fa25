@@ -101,7 +101,7 @@
 		// if none rolled is a 4...  regular roll
 		else { 
 			gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-			actionArea.innerHTML = '<button id="rollagain">Roll again</button> <button id="pass">Pass</button>';
+			actionArea.innerHTML = '<button id="rollagain">Roll Again</button> <button id="pass">Pass</button>';
 
 			//roll again sound
 			document.getElementById('rollagain').addEventListener('mouseup', function (){
